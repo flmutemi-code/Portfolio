@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Light Academy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Empowering Minds, Shaping Futures</h2>
+            <p>Light Academy provides quality education to help students achieve their dreams.</p>
+            <a href="#" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Light Academy</h2>
+            <p>
+                Light Academy is dedicated to academic excellence, innovation, and lifelong learning.
+                Our experienced instructors guide students toward success.
+            </p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-box">
+                <div class="course">Science</div>
+                <div class="course">Mathematics</div>
+                <div class="course">Technology</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Light Academy. </p>
+    </footer>
+
+</body>
+</html>
