@@ -101,7 +101,14 @@ header {
     padding: 1.5rem;
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
+
+.project-card img {"C:\Users\Administrator\OneDrive\Pictures\Screenshots\Screenshot 2025-02-11 105357.png"
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
 }
 
 .project-card:hover {
