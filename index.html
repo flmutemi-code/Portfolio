@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Edu | Global Academic Intelligence</title>
+    
     <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        #loading-screen {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #03060b; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 10000;
+        }
+        .loader-orbit {
+            width: 50px; height: 50px; border: 2px solid rgba(255,255,255,0.1);
+            border-top-color: #00d2ff; border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
 </head>
 <body>
+    <div id="loading-screen">
+        <div class="loader-orbit"></div>
+        <p style="color: #00d2ff; margin-top: 15px; font-family: sans-serif; letter-spacing: 2px; font-size: 10px;">SYNCHRONIZING NEXUS</p>
+    </div>
+
     <div class="bg-gradient"></div>
     <div class="bg-orb pink"></div>
     <div class="bg-orb blue"></div>
 
-    <!-- Navigation Bar -->
     <nav class="glass-nav" id="mainNav" style="display: none;">
         <div class="nav-logo" onclick="showPage('home')">NEXUS<b>EDU</b></div>
         <div class="nav-links">
@@ -30,7 +50,6 @@
     </nav>
 
     <main id="app-container">
-        <!-- AUTH GATEWAY -->
         <section id="page-auth" class="page active">
             <div class="auth-wrapper">
                 <div class="auth-card glass">
@@ -47,7 +66,6 @@
             </div>
         </section>
 
-        <!-- HOME PORTAL -->
         <section id="page-home" class="page">
             <div class="hero-content">
                 <h1>Architect Your <span class="gradient-text">Global Future.</span></h1>
@@ -61,7 +79,6 @@
             </div>
         </section>
 
-        <!-- EXPLORE MATRIX -->
         <section id="page-explore" class="page">
             <div class="filter-shelf glass">
                 <div class="filter-group">
@@ -91,7 +108,6 @@
             <div id="university-grid" class="grid-layout"></div>
         </section>
 
-        <!-- DYNAMIC PROFILE MATRIX -->
         <section id="page-profile" class="page">
             <div class="profile-layout">
                 <div class="profile-card glass">
@@ -129,7 +145,7 @@
                     </div>
 
                     <div class="glass data-card">
-                        <h3>Personal Milestones & Accomplishments</h3>
+                        <h3>Personal Milestones</h3>
                         <div class="bubble-input-group">
                             <input type="text" id="achievementInput" placeholder="e.g., International Math Olympiad" class="curvy-input">
                             <button onclick="addAchievement()" class="btn-add-bubble">+</button>
@@ -137,16 +153,6 @@
                         <ul id="achievementList" class="custom-list">
                             <li>Deans Honors List Excellence Award</li>
                         </ul>
-                    </div>
-
-                    <div class="glass data-card">
-                        <h3>Professional Endorsements</h3>
-                        <div class="recommendation-form">
-                            <input type="text" id="recAuthor" placeholder="Author Name & Title" class="curvy-input">
-                            <textarea id="recText" placeholder="Reference quote..." class="curvy-input text-area"></textarea>
-                            <button onclick="addRecommendation()" class="btn-glow small">Log Endorsement</button>
-                        </div>
-                        <div id="recommendationFeed" class="endorsement-feed"></div>
                     </div>
                 </div>
             </div>
